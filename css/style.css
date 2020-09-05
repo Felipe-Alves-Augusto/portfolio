@@ -113,7 +113,7 @@ header{
     height: 500px;
     background-color: #000;
     color: #fff;
-    background-image: url(https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80);
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -277,6 +277,8 @@ header{
     top: -400px;
 }
 
+
+
 .bullets{
     
     margin-left: 40%;
@@ -288,8 +290,8 @@ header{
 }
 
 .bullets span{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     float: left;
     border-radius: 8px;
     background-color: #fff;
@@ -492,16 +494,22 @@ header{
     }
 
     .foto-flex img{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         position: relative;
-        top: -100px;
+        top: -80px;
+        
         background-color: #111;
     }
 
     .foto-flex h1{
         font-size: 30px;
-    }   
+        margin-top: 15px;
+    }  
+    
+    .sobre-content p{
+        font-size: 15px;
+    }
 
     .skills{
         padding: 0;

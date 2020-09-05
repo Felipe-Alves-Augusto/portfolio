@@ -12,6 +12,7 @@ $(function(){
     clickArrow();
     menuDinamico();
     menuMobile();
+    bullets();
 
  
     function initSlider(){
@@ -141,8 +142,8 @@ $(function(){
         })
     }
 
-    cliqueSlider();
-    function cliqueSlider(){
+ // bullests
+    function bullets(){
         $(".bullets span").click(function(){
             $(".slider-projetos").eq(atual)
             atual = $(this).index();
