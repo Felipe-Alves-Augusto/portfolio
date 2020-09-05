@@ -117,7 +117,7 @@ $(function(){
     // menu mobile
     function menuMobile(){
 
-        $('.logo-menu').click(function(){
+        $('.logo-menu i').click(function(){
 
             $('.menu-mobile').slideToggle();
 

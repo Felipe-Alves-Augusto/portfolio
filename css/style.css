@@ -78,9 +78,11 @@ header{
     display: none;
 }
 
-.logo-mobile{
+.logo-code-menu{
     display: none;
 }
+
+
 
 .menu-list{
     float: right;
@@ -101,7 +103,7 @@ header{
     text-decoration:none;
 }
 
-.logo i{
+.logo-desktop i{
     font-size: 40px;
     color: #fff;
 }
@@ -450,13 +452,16 @@ header{
         background-color: #111;
     }
 
-    .logo-mobile{
-        display: inline-block;
-        position: relative;
-        font-size: 25px;
-        left: 37%;
-        
+    .logo-code-menu{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        background-color: #111;
+        color: #fff;
     }
+
+  
 
     .menu-list-mobile ul{
         width: 100%;
@@ -473,10 +478,10 @@ header{
 
 
     .logo-menu{
-        display: inline-block;
+        display: block;
         background-color: #111;
-        border: 1px solid #111;
-        cursor: pointer;
+       
+     
         
     }
 
@@ -484,6 +489,7 @@ header{
         font-size: 25px;
         padding: 10px;
         color: #fff;
+        cursor: pointer;
     }
 
 
