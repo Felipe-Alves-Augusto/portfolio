@@ -1,593 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
 }
-
 
 html,body{
     height: 100%;
-    background-color: #111
 }
- /* classes reutilizaveis */
+
 .container{
+    margin: 0 auto;
+    padding: 0 2%;
     width: 100%;
     max-width: 1280px;
-    padding: 0 2%;
-    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .clear{
     clear: both;
 }
 
+/************************************************** HEADER ***********************************************************/
+
 header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.fil{
-    color: #fff;
-    font-size: 25px;
-    text-align: center;
-    letter-spacing: 15px;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation-name: holofote;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes holofote{
-
-    from{
-
-        background-position: -500%;
-    }
-
-    to{
-        background-position: 500%;
-    }
-}
-
-/* navbar */
-
-.menu{
     width: 100%;
-    background-color: #111;
-    padding: 10px 0;
+    padding: 20px 0;
+    display: flex;
     position: fixed;
+    transition: 0.3s;
     z-index: 1;
-    
 }
 
-.menu-mobile{
-    display: none;
+.add-color{
+    background-color:#06d8d5;
+    box-shadow: 0px 0px 10px #000;
 }
 
-.logo-menu{
-    display: none;
+.remove-color{
+    background-color: transparent;
 }
 
-.logo-code-menu{
-    display: none;
+.logo{
+    color: #fff;
+    letter-spacing: 3px;
 }
 
-
-
-.menu-list{
-    float: right;
-    margin-top: 10px;
+.logo h1 span{
+    color: #06d8d5;
 }
 
-.menu-list ul{
+.menu-desktop ul{
     list-style: none;
-}
+}   
 
-.menu-list li{
+.menu-desktop ul li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
+
 }
 
-.menu-list a{
+.menu-desktop li a{
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
 }
 
-.logo-desktop i{
-    font-size: 40px;
-    color: #fff;
+.menu-desktop li a:hover{
+    color: #06d8d5;
 }
-
- /* BANNER */
 
 .banner{
     width: 100%;
-    height: 500px;
-    background-color: #000;
-    color: #fff;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png);
-    background-size: cover;
+    height: 626px;
+    background-image: url(../img/banner.jpg);
     background-position: center;
-    position: relative;
-  
-
+    background-size: cover;
 }
 
-.overplay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-
-
-
-
-/* foto de perfil */
-
-.foto-flex{
-    background-color: #111;
+.name{
     color: #fff;
+    letter-spacing: 2px;
+    padding-top: 20%;
+}
+.name p{
+    font-size: 15px;
+}
+.name p span{
+    color:#06d8d5 ;
 }
 
-.foto-flex h1{
-    position: relative;
-    top: -70px;
-    
-    font-weight: normal;
-    font-size:45px
+.name h2{
+    font-size: 60px;
 }
 
-
-
-   
-.foto-flex img{
-    width:170px;
-    height: 170px;
-    border-radius: 50%;
-    position: relative;
-    top: -90px;
-    left: 30px;
-
-    
-    
-    
-}
-/* sobre */
+/*************************************************** SOBRE ************************************************** */
 
 .sobre{
-
-    padding: 50px 0; 
-    color: #fff; 
-}
-
-.sobre-content{
-    width: 100%;
+    padding: 60px 0;
     text-align: center;
 }
- 
 
-.sobre h2{
-    text-align: center;
-
+.sobre h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px #000;
+   
 }
 
 .sobre p{
-    width: 100%;
-    max-width: 600px;
-    margin-top: 40px;
-    font-size: 17px;
-    font-weight: normal;
+    color:#06d8d5;
+    font-size: 15px;
+}
+.sobre p:nth-of-type(1){
+    margin-top: 7px;
+    letter-spacing: 1px;
+    
+}
+.sbore p span{
     display: inline-block;
-    text-align: left;
 }
 
-/* habilidades */
+.foto{
+    width: 40%;
+}
+
+.foto img{
+
+    width: 300px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.conteudo-sobre{
+    width: 60%;
+}
+
+.conteudo-sobre p{
+    max-width: 600px;
+    display: inline-block;
+    text-align: left;
+    color: #000;
+    margin-top: 15px;
+    
+}
+.conteudo-sobre h3{
+   text-align: left;
+   margin-left: 65px;
+   text-shadow: 0px 0px 5px #000;
+}
+
+.conteudo-sobre h3 span{
+    color: #06d8d5;
+}
+
+.curriculo{
+    width: 190px;
+    margin: 0 auto;
+    position: relative;
+    top: -95px;
+}
+
+.buttons{
+    background-color:#06d8d5;
+    padding: 15px 0;
+    display: block;
+    margin-left: 40px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.curriculo a:hover{
+    background-color:#09aaa7 ;
+}
+
+/************************************** PROJETOS **********************************************/
+.work{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/projeto02.png);
+    position: relative;
+    left: 0;
+
+}
+
+
+.work .lado{
+    width: 40%;
+    background:rgba(86, 86, 86, 0.3);
+    height: 100vh;
+  
+}
+
+
+.work .lado h1{
+    padding-top: 50%;
+    text-align: center;
+    font-size: 37px;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.work .lado p{
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.work .lado button{
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #06d8d5;
+    border: none;
+    box-shadow: 0px 0px 5px #06d8d5;
+    border-radius: 10px;
+    margin-left: 35%;
+    transition:0.3s ;
+    color: #fff;
+}
+
+.work .lado button:hover{
+    background-color: #09aaa7;
+}
+
+.work .lado button a{
+    text-decoration: none;
+    
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    
+}
+
+#prev, #next{
+    font-size: 40px;
+    color: #06d8d5;
+    cursor: pointer;
+}
+
+#prev, #next:hover{
+    color: #09aaa7;
+}
+
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.preview img{
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    opacity: 0.3;
+}
+
+.preview .active{
+    display: block;
+    border: 3px solid #06d8d5;
+    width: 110px;
+    opacity: 1;
+}   
 
 .skills{
     padding: 50px 0;
-
-}
-
-.skills h3{
     text-align: center;
-    color: #fff;
-    margin-bottom: 60px;
+}
+.skills h2{
+    font-size: 30px;
+    text-shadow: 0px 0px 5px #000;
 }
 
 .icons{
-    padding: 50px 0;
-    width: 33.3%;
-    float: left;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
+    margin: 0 30px;
+    font-size: 60px;
+    margin-top: 30px;
+    display: inline-block;
 }
 
-.icons i{
-    font-size:80px
-}
-
-.icons img{
-    width: 85px;
+.icons i span{
+    display: block;
+    font-size: 15px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px #000;
 }
 
 
-/* Projetos */
+/*CONTATOS */
 
-.scroll-equipe{
-    width: 100%;
-    overflow: hidden;
-    
-}
-
-.projetos{
+.contact{
     padding: 50px 0;
 }
-
-.projetos h4{
-    margin-bottom: 60px;
-}
-
-.scroll-wraper{
-    width: 100%;
-}
-
-.slider-projetos{
-    width: 100%;
-    border-radius: 30px;
-    float: left;
-   
-}
-
-.card{
-    margin: 0 auto;
-    
-    width: 40%;
-    color: #fff;
-}
-
-.card-body{
-   
-    background-color: #111;
-   
-}
-
-
-.card-img-top{
-    height: 250px;
-}
-
-.card-img-top img{
-    border-radius: 30px;
-    height:100% ;
-}
-
-.arrow{
-    position: relative;
-    top: -300px;
-}
-
-
-
-.bullets{
-    
-    margin-left: 40%;
-   position: relative;
-   bottom: 45px;
-    
-    
-}
-
-.bullets span{
-    width: 14px;
-    height: 14px;
-    float: left;
-    border-radius: 8px;
-    background-color: #fff;
-    margin: 0 20px;
-    cursor: pointer;
-}
-
-#arrow-left{
-    float: left;
-    font-size: 60px;
-    color: #fff;
-    cursor: pointer;
-   
-
-}
-
-#arrow-right{
-    font-size: 60px;
-    float: right;
-    color: #fff;
-    cursor: pointer;
-}
-
 
 .contato{
-    width: 100%;
-    max-width: 400px;
-    height: 400px;
-    background-color: #111;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    padding: 25px;
-    display: none;
-}
-
-#contato{
-    position: fixed;
-}
-
-.close i{
-    color: #fff;
-    cursor: pointer;
-}
-
-.contato h5{
-    text-align: center;
-    margin-top: 25px;
-    color: #fff;
-    margin-bottom: 40px;
-}
-
-.links{
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
+    width: 50%;
+    height: 56vh;
     
 }
 
-.links p{
-    font-size:17px;
-    margin: 0 15px;
+.contato h2,.send h2{
+    font-size: 35px;
+    text-shadow: 0px 0px 5px #000;
+
 }
 
-.links i{
-    font-size: 35px;
+.contato p{
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
    
 }
 
-.links a{
-    margin: 0 15px;
+.contato p a i{
+    color: #000;
+    text-decoration: underline;
+    
+}
+
+.send{
+    width: 50%;
+}
+
+.send form{
+    width: 100%;
+    max-width: 450px;
+
+    margin-top: 10px;
+}
+
+.send form input{
+   width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.send form .w50{
+    display: flex;
+}
+
+.send form .w50 input[type=email]{
+    margin-left: 5px;
+}
+
+
+.send form input:focus{
+    box-shadow: 0px 0px 7px #000;
+}
+
+.send form input[type=submit]{
+    width: 30%;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000;
+    transition: 0.3s;
+    border: none;
+}
+
+.send form input[type=submit]:hover{
+    background-color: #09aaa7;
+}
+
+.send form textarea{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    height: 140px;
+    padding: 5px;
+    resize: none;
+}
+
+.send form textarea:focus{
+    box-shadow: 0px 0px 7px #000;
 }
 
 .rodape{
-    background-color: #111;
     padding: 50px 0;
-    text-align: center
+    background-color: #212121;
 }
-
-.rodape i{
-    color: #fff;
-    font-size: 30px;
-}
-
-
-@media screen and (max-width:1024px){
-
-
-    body{
-        background-color: #111;
-    }
-
-
-    .card{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .projetos{
-        
-        width: 100%;
-    }
-
-    .sobre{
-        background-color: #111;
-        margin: 0;
-    }
-
-    .skills {
-        background-color: #111;
-    }
-
-    .arrow{
-        font-size: 20px;
-    }
-
-    
-    .arrow{
-        position: static;
-        margin-top: 40px;
-    }
-    
-}   
-
-
-@media screen and (max-width:768px){
-
-
-    .card{
-        width: 100%;
-    }
-
-    
-    .arrow{
-        position: static;
-        margin-top: 40px;
-    }
-
-}
-
-
-@media screen and (max-width:510px){
-
-
-    .menu{
-        display: none;
-
-    }
-
-    .banner{
-
-        height: 400px;
-
-    }
-    .menu-mobile{
-        display: none;
-        background-color: #111;
-    }
-
-    .logo-code-menu{
-        display: block;
-        text-align: center;
-        padding: 10px;
-        font-size: 20px;
-        background-color: #111;
-        color: #fff;
-    }
-
-  
-
-    .menu-list-mobile ul{
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu-list-mobile li{
-        padding: 15px;
-    }
-
-    .menu-list-mobile a{
-        color: #fff;
-    }
-
-
-    .logo-menu{
-        display: block;
-        background-color: #111;
-       
-     
-        
-    }
-
-    .logo-menu i{
-        font-size: 25px;
-        padding: 10px;
-        color: #fff;
-        cursor: pointer;
-    }
-
-
-    .foto-flex{
-
-       
-        background-color: #111;
-    }
-
-    .foto-flex img{
-        width: 150px;
-        height: 150px;
-        position: relative;
-        top: -80px;
-        
-        
-        background-color: #111;
-    }
-
-    .foto-flex h1{
-        font-size: 30px;
-        margin-top: 15px;
-    }  
-    
-    .sobre-content p{
-        font-size: 15px;
-    }
-
-    .skills{
-        padding: 0;
-    }
-
-    .icons{
-        width: 50%;
-        float: left;
-    }
-
-    .card{
-        width: 100%;
-        height: auto;
-       
-    }
-
-    .bullets{
-        margin-left:22%;
-      
-    }
-
-    .bullets span{
-        width: 10px;
-        height: 10px;
-        position: relative;
-        top: -35px;
-        
-    }
-
-    .arrow{
-        position: relative;
-        top: 20px;
-    }
-
-}
-
-
-@media screen and (max-width:540px){
-
-    .bullets{
-        margin-left: 30%;
-    }
-}
-
-
-@media screen and (max-width:320px){
-
-    .bullets{
-        margin-left: 10%;
-    }
-}
-
-@media screen and (max-width:414px){
-
-    .bullets{
-        margin-left:18%;
-    }
-}
-
-
-
-
-
-
 
 
 
