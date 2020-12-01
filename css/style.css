@@ -400,8 +400,14 @@ header{
 .rodape{
     padding: 50px 0;
     background-color: #212121;
+    text-align: center;
 }
 
+.rodape i{
+    color: #06d8d5;
+    font-size: 40px;
+  
+}
 
 
 
