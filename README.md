@@ -8,5 +8,5 @@
     JAVASCRIPT,
     JQUERY
 
-e também foi usado a bliblioteca do font awwsome
+e também foi usado a bliblioteca do font awesome
 
