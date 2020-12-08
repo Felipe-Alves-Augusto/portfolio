@@ -61,3 +61,22 @@ prev.onclick = ()=>{
         i--;
     }
 }
+
+
+let btn_logo = document.querySelector('.logo-menu');
+let menu = document.querySelector('.menu-mobile');
+
+
+btn_logo.addEventListener('click',()=>{
+
+    if(menu.classList.contains('hide')){
+
+        menu.classList.add('show')
+        menu.classList.remove('hide');
+
+    } else{
+        menu.classList.add('hide');
+        menu.classList.remove('show');
+    }
+
+})

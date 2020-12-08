@@ -29,6 +29,10 @@ html,body{
     clear: both;
 }
 
+#close{
+    display: none;
+}
+
 /************************************************** HEADER ***********************************************************/
 
 header{
@@ -56,6 +60,14 @@ header{
 
 .logo h1 span{
     color: #06d8d5;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.logo-menu{
+    display: none;
 }
 
 .menu-desktop ul{
@@ -190,6 +202,8 @@ header{
     width: 100%;
     height: 100vh;
     background-image: url(../img/projeto02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     left: 0;
 
@@ -407,6 +421,160 @@ header{
     color: #06d8d5;
     font-size: 40px;
   
+}
+
+
+@media screen and (max-width:510px){
+
+
+    .name{
+        padding-top: 35%;
+    }
+
+    .banner{
+        height: 400px;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        
+        position: fixed;
+        display: block;
+    }
+
+    .hide{
+        width: 100%;
+       position: fixed;
+       left: -450px;
+       transition: 1s;
+    
+    }
+
+    .show{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        transition: 1s;
+   
+    }
+
+    .logo-menu{
+        display: block;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul{
+        text-align: center;
+        padding-top: 25%;
+        background-color: #212121;
+        list-style: none;
+        
+
+    }
+
+    .menu-mobile li{
+        padding: 10px 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu-mobile li a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .sobre .flex{
+        display: block;
+       
+    }
+
+    .sobre .foto{
+        width: 100%;
+    }
+
+    .sobre .conteudo-sobre {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .curriculo{
+        position: static;
+    }
+
+    .work .lado{
+        width: 100%;
+        height: 100%;
+    }
+
+    .work .info{
+       
+        position: relative;
+        top: -90px;
+    }
+
+    .work{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .preview{
+        text-align: center;
+    }
+
+    .preview img{
+        display: none;
+
+    }
+
+    .contact .flex{
+        display: block;
+       
+    }
+
+    .contato{
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+
+    .contato h2{
+        font-size: 20px;
+    }
+
+    .contato p{
+        font-size: 13px;
+        margin-top: 20px;
+
+    }
+
+    .send{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .send h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .send form .w50{
+        display: block;
+    }
+
+    .send form .w50 input[type=email]{
+        margin-left: 0;
+    }
+
+    .icons{
+        font-size: 35px;
+    }
+
 }
 
 
