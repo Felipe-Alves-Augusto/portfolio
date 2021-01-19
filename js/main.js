@@ -37,14 +37,15 @@ let backgroundImg = new Array(
     "img/projeto01.jpg",
     "img/projeto3.png",
     "img/projeto4.png",
-    "img/projeto5.jpg"
+    "img/projeto5.jpg",
+    "img/projeto6.png"
 
 );
 
 let i = 0;
 
 next.onclick = ()=>{
-    if(i < 4){
+    if(i < 5){
         work.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
         
         thumb[i+1].classList.add('active');
