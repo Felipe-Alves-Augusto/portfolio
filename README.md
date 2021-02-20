@@ -6,6 +6,8 @@
     HTML5,
     CSS3,
     JAVASCRIPT
+    
+    FrameWorks: Boostrap
 
 e também foi usado a bliblioteca do font awesome
 
