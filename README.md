@@ -5,8 +5,7 @@
  Linguagens usadas nesse projeto:
     HTML5,
     CSS3,
-    JAVASCRIPT,
-    JQUERY
+    JAVASCRIPT
 
 e também foi usado a bliblioteca do font awesome
 
