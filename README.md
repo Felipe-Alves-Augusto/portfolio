@@ -5,8 +5,9 @@
  Linguagens usadas nesse projeto:
     HTML5,
     CSS3,
-    JAVASCRIPT,
-    JQUERY
+    JAVASCRIPT
+    
+    FrameWorks: Boostrap
 
 e também foi usado a bliblioteca do font awesome
 
