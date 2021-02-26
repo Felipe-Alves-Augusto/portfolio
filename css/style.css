@@ -4,9 +4,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    
     
 }
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+  
 
 html,body{
     height: 100%;
@@ -293,30 +321,26 @@ header{
     border: 3px solid #06d8d5;
     width: 110px;
     opacity: 1;
-}   
+}  
 
-.skills{
-    padding: 50px 0;
+.habilidade{
+    padding: 50px;
     text-align: center;
 }
-.skills h2{
-    font-size: 30px;
-    text-shadow: 0px 0px 5px #000;
+
+.skills{
+    padding: 30px 0;
+    text-align: center;
+    float: left;
+    width: 33.3%;
 }
 
-.icons{
-    margin: 0 30px;
-    font-size: 60px;
-    margin-top: 30px;
-    display: inline-block;
+.skills .card-body i{
+    font-size: 70px;
+   
+
 }
 
-.icons i span{
-    display: block;
-    font-size: 15px;
-    font-weight: bolder;
-    text-shadow: 0px 0px 5px #000;
-}
 
 
 /*CONTATOS */
@@ -365,23 +389,17 @@ header{
    width: 100%;
     height: 40px;
     padding: 5px;
-    margin-top: 15px;
     border-radius: 10px;
-    border: 1px solid #000;
 }
 
 .send form .w50{
     display: flex;
 }
 
-.send form .w50 input[type=email]{
-    margin-left: 5px;
-}
 
 
-.send form input:focus{
-    box-shadow: 0px 0px 7px #000;
-}
+
+
 
 .send form input[type=submit]{
     width: 30%;
@@ -399,17 +417,14 @@ header{
 
 .send form textarea{
     width: 100%;
-    margin-top: 15px;
+   
     border-radius: 10px;
-    border: 1px solid #000;
     height: 140px;
     padding: 5px;
     resize: none;
 }
 
-.send form textarea:focus{
-    box-shadow: 0px 0px 7px #000;
-}
+
 
 .rodape{
     padding: 50px 0;

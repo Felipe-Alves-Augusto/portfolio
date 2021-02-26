@@ -25,6 +25,8 @@
     <meta property="twitter:image" content="foto  o site">
     <title>Felipe Alves Augusto</title>
     <link rel="stylesheet" href="css/style.css">
+    <!---------------------------BOOSTRAP------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
     <div id="home" class="banner">
@@ -108,17 +110,68 @@
             </div><!--slider-->
         </aside><!--lado-->
     </section><!--projetos-->
+    <h2 class="habilidade">Habilidades</h2>
     <section class="skills">
         <div class="container">
-            <h2>Habilidades</h2>
-            <div class="icons"><i style="color: orangered;" class="fab fa-html5"><span>HTML5</span></i></div>
-            <div class="icons"><i style="color: blue;" class="fab fa-css3-alt"><span>CSS3</span></i></div>
-            <div class="icons"><i style="color: yellow;" class="fab fa-js"><span>Javascript/Jquery</span></i></div>
-            <div class="icons"><i style="color: rgb(109, 17, 109);" class="fab fa-php"><span>PHP</span></i></div>
-            <div class="icons"><i style="color: plum;" class="fab fa-bootstrap"><span>BOOSTRAP</span></i></div>
-            <div class="icons"><i style="color: #ccc;" class="fas fa-database"><span>SQL ORACLE/MYSQL</span></i></div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">HTML5</div>
+                <div class="card-body">
+                    <i style=" color: var(--bs-orange);" class="fab fa-html5"></i>
+                </div><!--card-body-->
+            </div><!--card-->
         </div><!--container-->
     </section><!--skills-->
+    <section class="skills">
+        <div class="container">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">CSS3</div>
+                <div class="card-body">
+                    <i style="color: var(--bs-blue);" class="fab fa-css3-alt"></i>
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--container-->
+    </section><!--skills-->
+    <section class="skills">
+        <div class="container">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Javascript</div>
+                <div class="card-body">
+                    <i style="color: var(--bs-yellow);" class="fab fa-js"></i>
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--container-->
+    </section><!--skills-->
+    <section class="skills">
+        <div class="container">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">MYSQL/ SQL</div>
+                <div class="card-body">
+                    <i style="color: var(--bs-gray)" class="fas fa-database"></i>
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--container-->
+    </section><!--skills-->
+    <section class="skills">
+        <div class="container">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">PHP</div>
+                <div class="card-body">
+                    <i style="color: var(--bs-indigo);" class="fab fa-php"></i>
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--container-->
+    </section><!--skills-->
+    <section class="skills">
+        <div class="container">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">BOOSTRAP</div>
+                <div class="card-body">
+                    <i style="color: var(--bs-indigo);" class="fab fa-bootstrap"></i>
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--container-->
+    </section><!--skills-->
+ 
     
     <section class="contact">
         <div class="container flex">
@@ -132,13 +185,18 @@
             <div class="send">
                 <h2>Mande uma Mensagem para mim!</h2>
                 <form action="">
-                    <div class="w50">
-                        <input type="text" placeholder="Nome:">
-                        <input type="email" placeholder="Email:">
-                    </div>
-                    <input type="text" placeholder="Sobre:">
-                    <textarea placeholder="Messagem:"></textarea>
-                    <input type="submit" value="Enviar">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Sobre:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
                 </form>
             </div><!--send-->
             
@@ -147,8 +205,7 @@
     <footer class="rodape">
         <i class="fas fa-smile-wink"></i>
     </footer>
-
-    <script src="js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script src="js/menuScroll.js"></script>
 <script src="https://kit.fontawesome.com/8debdb91c9.js" crossorigin="anonymous"></script>
