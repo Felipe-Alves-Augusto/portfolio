@@ -24,9 +24,11 @@
     <meta property="twitter:url" content="https://felipe-alves-augusto.github.io/portifolio/">
     <meta property="twitter:image" content="foto  o site">
     <title>Felipe Alves Augusto</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
     <link rel="stylesheet" href="css/style.css">
-    <!---------------------------BOOSTRAP------------------------------------------------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  
 </head>
 <body>
     <div id="home" class="banner">
@@ -50,7 +52,7 @@
            
         </div><!--container-->
     </header>
-    <nav class="menu-mobile hide">
+    <nav class="menu-mobile">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
@@ -66,148 +68,149 @@
         <p>e eu sou <span>desenvolvedor Full-Stack</span></p>
     </div><!--name-->
     </div><!--banner-->
-    <section id="sobre" class="sobre">
-        <h3>Sobre Mim</h3>
-        <p>Quem eu sou</p>
-        <div class="container flex">
-            <div class="foto">
-                <img src="img/foto-edit.png" alt="">
-            </div><!--foto-->
-            <div class="conteudo-sobre">
-                <h3>Eu sou o <span>Felipe</span> </h3>
-                <p>
-                    Tenho 19 anos, atualmente curso o 3° Semestre de Análise e Desenvolvimento de Sistemas na Universidade Nove de Julho (UNINOVE). Além disso, faço um curso complementar de Desenvolvedor Full Stack na Danki Code.<br>
-                    Tenho formação em Inglês Pré - Avançado, com duração de 3 anos (2017 - 2019).
-                    Estou à procura de uma vaga para a área de Tecnologia, para colocar em prática meu aprendizado. Busco vagas em Estágios e/ou Júnior.</p>
-            </div><!--sobre-conteudo-->
+    <section class="servicos">
+        <h1>Serviços</h1>
+        <div class="container">
+            <div class="flex">
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Layouts responsivos</h3>
+                    <p>Faço sites para todos os tipos de tela!</p>
+                </div><!--card-->
+                <div class="card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Manutenção</h3>
+                    <p>Faço manutenção em seu site ou sistema!</p>
+                </div><!--card-->
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Full-Stack</h3>
+                    <p>Tenho habilidades tanto no Frond-end quanto no Back-End!</p>
+                </div><!--card-->
+             </div><!--flex-->
         </div><!--container-->
-        <div class="curriculo">
-            <a class="buttons" href="img/curriculo Felipe2.docx" download="curriculo felipe">Download CV</a>
-        </div><!--curriculo-->
-    </section><!--sobre-->
-    <section class="work">
-        <aside class="lado">
-            <div class="conteiner">
-                <div class="info">
-                    <h1>Meus Projetos</h1>
-                    <p>Acesse meu GitHub para saber mais deles!</p>
-                    <a target="blank" href="https://github.com/Felipe-Alves-Augusto?tab=repositories"><button>GitHub</button></a>
-                    
-                </div><!--info-->
+    </section><!--servicos-->
+    <section class="sobre">
+        <h1>Um pouco sobre mim</h1>
+        <div class="container">
+            <p>Tenho 19 anos, comecei a fazer a faculdade em 2020, atualmento estou no 3° semestre de Análise e Desenvolvimento de Sistemas na Universidade Nove Julho (Uninove).<br>
+                Além disso, faço curso complementar de Desenvolvedor Full Stack na Danki Code.
+                Tenho formação em Inglês Pré-Avançado, com duração de 3 anos(2017 - 2019) e tenho habilidade tanto no Frond-end quanto no Back-End, tenho alguns projetos no meu GitHub, mas meus projetos são só acadêmicos.<br>
                 
-            </div><!--container-->
-            <div class="slider">
-                <i id="prev" class="fas fa-long-arrow-alt-left"></i>
-                <div class="preview">
-                    <img src="img/projeto02.png" class="active thumb" alt="">
-                    <img src="img/projeto01.jpg" class="thumb" alt="">
-                    <img src="img/projeto3.png" class="thumb" alt="">
-                    <img src="img/projeto4.png" class="thumb" alt="">
-                    <img src="img/projeto5.jpg" class="thumb" alt="">
-                    <img src="img/projeto6.png" class="thumb" alt="">
-                </div><!--preview-->
-                <i id="next" class="fas fa-long-arrow-alt-right"></i>
-            </div><!--slider-->
-        </aside><!--lado-->
+                Estou à procura de uma vaga para área de tecnologia, para colocar em prática meu aprendizado.
+                Desejo fazer parte do time, sou uma pessoa dedicada, confiante e comprometida com as atribuições dadas a mim.
+                 </p>
+        </div><!--container-->
+    </section><!--sobre-->
+    <section class="projetos">
+        <h1>Meus projetos</h1>
+        <p>Clique neles para saber mais!</p>
+        <i class="fas fa-arrow-down"></i>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(img/projeto01.jpg);">
+                    <a href="https://github.com/Felipe-Alves-Augusto/Projeto-Faculdade" target="_blank" class="layer">
+                        <h2>Projeto Faculdade</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
+              
+                  <div class="swiper-slide" style="background-image: url(img/projeto02.png);">
+                    <a href="https://felipe-alves-augusto.github.io/Gerenciamento-de-Usuario/" target="_blank" class="layer">
+                        <h2>Gerenciamento de Usuários</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
+                  <div class="swiper-slide" style="background-image: url(img/projeto3.png);">
+                    <a href="https://github.com/Felipe-Alves-Augusto/Calculadora" target="_blank" class="layer">
+                        <h2>Calculadora</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
+                  <div class="swiper-slide" style="background-image: url(img/projeto4.png);">
+                    <a href="https://github.com/Felipe-Alves-Augusto/Email-Marketing" target="_blank" class="layer">
+                        <h2>Email Marketing</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
+                  <div class="swiper-slide" style="background-image: url(img/projeto5.jpg);">
+                    <a href="https://github.com/Felipe-Alves-Augusto/Midia-Kit" target="_blank" class="layer">
+                        <h2>Mídia Kit</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
+                  <div class="swiper-slide" style="background-image: url(img/projeto6.png);">
+                    <a href="https://github.com/Felipe-Alves-Augusto/Site-com-painel-de-controle" target="_blank" class="layer">
+                        <h2>Site com Painel de Controle</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
+               
+                </div><!--swiper-container-->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div><!--swiper-pagination-->
+        </div><!--container-->
     </section><!--projetos-->
-    <h2 class="habilidade">Habilidades</h2>
+
     <section class="skills">
+        <h1>Habilidadessds</h1>
         <div class="container">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">HTML5</div>
-                <div class="card-body">
-                    <i style=" color: var(--bs-orange);" class="fab fa-html5"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--container-->
-    </section><!--skills-->
-    <section class="skills">
-        <div class="container">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">CSS3</div>
-                <div class="card-body">
-                    <i style="color: var(--bs-blue);" class="fab fa-css3-alt"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--container-->
-    </section><!--skills-->
-    <section class="skills">
-        <div class="container">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">Javascript</div>
-                <div class="card-body">
-                    <i style="color: var(--bs-yellow);" class="fab fa-js"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--container-->
-    </section><!--skills-->
-    <section class="skills">
-        <div class="container">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">MYSQL/ SQL</div>
-                <div class="card-body">
-                    <i style="color: var(--bs-gray)" class="fas fa-database"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--container-->
-    </section><!--skills-->
-    <section class="skills">
-        <div class="container">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">PHP</div>
-                <div class="card-body">
-                    <i style="color: var(--bs-indigo);" class="fab fa-php"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--container-->
-    </section><!--skills-->
-    <section class="skills">
-        <div class="container">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                <div class="card-header">BOOSTRAP</div>
-                <div class="card-body">
-                    <i style="color: var(--bs-indigo);" class="fab fa-bootstrap"></i>
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--container-->
-    </section><!--skills-->
- 
-    
-    <section class="contact">
-        <div class="container flex">
-            <div class="contato">
-                <h2>Meus Contatos</h2>
-                <p><i class="fas fa-envelope"> :felipealvesaugusto9@gmail.com</i></p>
-                <p><a target="blank" href="https://www.linkedin.com/in/felipe-alves-augusto-2400461b1/"><i class="fab fa-linkedin">: Linkedln</i></a></p>
-                <p><i class="fab fa-whatsapp">:(11)943153687</i></p>
-                <p><a target="blank" href="https://github.com/Felipe-Alves-Augusto"><i class="fab fa-github">:GitHub</i></a></p>
-            </div><!--contato-->
-            <div class="send">
-                <h2>Mande uma Mensagem para mim!</h2>
-                <form action="">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Sobre:</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                </form>
-            </div><!--send-->
             
+                <div class="icon-item">
+                    <i style="color: #e65100 ;" class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div><!--icon-item-->
+                <div class="icon-item">
+                    <i style="color: #00b0ff ;" class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div><!--icon-item-->
+                <div class="icon-item">
+                    <i style="color: #ffca28 ;" class="fab fa-js-square"></i>
+                    <p>JAVASCRIPT</p>
+                </div><!--icon-item-->
+                <div class="icon-item">
+                    <i style="color: #311b92 ;" class="fab fa-bootstrap"></i>
+                    <p>BOOSTRAP</p>
+                </div><!--icon-item-->
+                <div class="icon-item">
+                    <i style="color: #7c4dff ;" class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div><!--icon-item-->
+                <div class="icon-item">
+                    <i style="color: #fe3000;" class="fas fa-database"></i>
+                    <p>ORACLE/MYSQL</p>
+                </div><!--icon-item-->
+                <div class="clear"></div>
         </div><!--container-->
-    </section><!--contato-->
+    </section><!--skills-->
     <footer class="rodape">
-        <i class="fas fa-smile-wink"></i>
-    </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-<script src="js/menuScroll.js"></script>
+        
+        <div class="info-user">
+            <div class="line">
+                <i class="fab fa-whatsapp"></i>
+                <p>(11) 94315-3687</p>
+            </div><!--line-->
+            <div class="line">
+                <i class="fas fa-phone"></i>
+                <p>2557-0142</p>
+            </div><!--line-->
+            <hr>
+            <div class="line">
+                <i class="fas fa-envelope"></i>
+                <p>felipealvesaugusto9@gmail.com</p>
+            </div><!--line-->
+            <div class="links">
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/felipe-alves-augusto-2400461b1/"><i style="color: #0091ea ;" class="fab fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/Felipe-Alves-Augusto?tab=repositories"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div><!--info-user-->
+           
+            
+    </footer><!--rodape-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../package/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+
+
 <script src="https://kit.fontawesome.com/8debdb91c9.js" crossorigin="anonymous"></script>
 </body>
 </html>

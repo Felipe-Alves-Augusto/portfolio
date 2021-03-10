@@ -1,44 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    
     
     
 }
 
-:root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
-    --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  }
-  
+
 
 html,body{
     height: 100%;
+    position: relative;
 }
+
 
 .container{
     margin: 0 auto;
@@ -61,25 +41,24 @@ html,body{
     display: none;
 }
 
+.slider-mobile{
+    display: none;
+}
+
 /************************************************** HEADER ***********************************************************/
 
 header{
     width: 100%;
-    padding: 20px 0;
+    padding: 7px 0;
     display: flex;
     position: fixed;
-    transition: 0.3s;
-    z-index: 1;
+    background-color: #fe3000;
+    z-index: 5;
+   
 }
 
-.add-color{
-    background-color:#06d8d5;
-    box-shadow: 0px 0px 10px #000;
-}
 
-.remove-color{
-    background-color: transparent;
-}
+
 
 .logo{
     color: #fff;
@@ -87,7 +66,7 @@ header{
 }
 
 .logo h1 span{
-    color: #06d8d5;
+    color: #fff;
 }
 
 .menu-mobile{
@@ -116,13 +95,15 @@ header{
 }
 
 .menu-desktop li a:hover{
-    color: #06d8d5;
+    color: #212121;
 }
+
+
 
 .banner{
     width: 100%;
     height: 626px;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/bg2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -136,461 +117,308 @@ header{
     font-size: 15px;
 }
 .name p span{
-    color:#06d8d5 ;
+    color:#fe3000 ;
 }
 
 .name h2{
     font-size: 60px;
 }
 
-/*************************************************** SOBRE ************************************************** */
+.servicos{
+    padding: 85px;
+}
+
+.servicos h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servicos .card{
+    width: 30%;
+    text-align: center;
+    
+    padding: 40px;
+}
+
+.servicos .card i{
+    font-size: 40px;
+    color: #fe3000;
+}
+
+.servicos .card h3{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.servicos .card p{
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.servicos .card:nth-of-type(2){
+    background-color: #212121;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #212121;
+}
 
 .sobre{
-    padding: 60px 0;
+    padding: 75px;  
+    background-color: #212121;  
+    color: #fff;
+}
+
+.sobre p,h1{
+    margin: 20px auto;    
+    max-width: 700px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.sobre h1{
+    color:#fe3000 ;
+}
+
+.projetos{
+    padding: 75px;
     text-align: center;
 }
 
-.sobre h3{
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 5px #000;
-   
+.projetos h1{
+    text-align: center;
 }
 
-.sobre p{
-    color:#06d8d5;
-    font-size: 15px;
-}
-.sobre p:nth-of-type(1){
-    margin-top: 7px;
-    letter-spacing: 1px;
+.projetos p{
     
-}
-.sbore p span{
-    display: inline-block;
+    margin-bottom: 5px;
 }
 
-.foto{
-    width: 40%;
+.projetos i{
+    color: #fe3000;
 }
 
-.foto img{
-
-    width: 300px;
-    margin-top: 50px;
-    box-shadow: 0px 0px 15px #000;
-}
-
-.conteudo-sobre{
-    width: 60%;
-}
-
-.conteudo-sobre p{
-    max-width: 600px;
-    display: inline-block;
-    text-align: left;
-    color: #000;
-    margin-top: 15px;
-    
-}
-.conteudo-sobre h3{
-   text-align: left;
-   margin-left: 65px;
-   text-shadow: 0px 0px 5px #000;
-}
-
-.conteudo-sobre h3 span{
-    color: #06d8d5;
-}
-
-.curriculo{
-    width: 190px;
-    margin: 0 auto;
-    position: relative;
-    top: -95px;
-}
-
-.buttons{
-    background-color:#06d8d5;
-    padding: 15px 0;
-    display: block;
-    margin-left: 40px;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.curriculo a:hover{
-    background-color:#09aaa7 ;
-}
-
-/************************************** PROJETOS **********************************************/
-.work{
+.swiper-container {
     width: 100%;
-    height: 100vh;
-    background-image: url(../img/projeto02.png);
+    height: 100%;
+    padding: 40px 25px;
+    border-radius: 20px;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    height: 400px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    z-index: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    left: 0;
+    background-position: center;
+    border-radius: 20px;
+    transition: all 0.3s;
+   
+  }
+
+  .swiper-slide:hover{
+      transform: scale(1.2);
+      z-index: 5;
+      cursor: pointer;
+      
+
+  }
+
+.layer{
+    width: 100%;
+    height: 100%;
+    padding: 0 4%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+ 
 
 }
 
 
-.work .lado{
-    width: 40%;
-    background:rgba(86, 86, 86, 0.3);
-    height: 100vh;
-  
-}
-
-
-.work .lado h1{
-    padding-top: 50%;
-    text-align: center;
-    font-size: 37px;
-    color: #fff;
-    text-shadow: 0px 0px 5px #000;
-}
-
-.work .lado p{
-    text-align: center;
-    margin-top: 15px;
-    color: #fff;
-    text-shadow: 0px 0px 5px #000;
-}
-
-.work .lado button{
-    width: 150px;
-    height: 40px;
-    margin-top: 15px;
-    cursor: pointer;
-    background-color: #06d8d5;
-    border: none;
-    box-shadow: 0px 0px 5px #06d8d5;
-    border-radius: 10px;
-    margin-left: 35%;
-    transition:0.3s ;
-    color: #fff;
-}
-
-.work .lado button:hover{
-    background-color: #09aaa7;
-}
-
-.work .lado button a{
-    text-decoration: none;
-    
-}
-
-.slider{
-    display: flex;
-    align-items: center;
+.layer h2{
     position: absolute;
-    right: 20px;
-    bottom: 50px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    bottom: 25px;
     
-}
-
-#prev, #next{
-    font-size: 40px;
-    color: #06d8d5;
-    cursor: pointer;
-}
-
-#prev, #next:hover{
-    color: #09aaa7;
-}
-
-.preview{
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
-}
-
-.preview img{
-    width: 80px;
-    height: 80px;
-    margin: 0 10px;
-    opacity: 0.3;
-}
-
-.preview .active{
-    display: block;
-    border: 3px solid #06d8d5;
-    width: 110px;
-    opacity: 1;
-}  
-
-.habilidade{
-    padding: 50px;
-    text-align: center;
 }
 
 .skills{
-    padding: 30px 0;
+    padding-bottom: 30px;
     text-align: center;
-    float: left;
-    width: 33.3%;
-}
-
-.skills .card-body i{
-    font-size: 70px;
-   
-
-}
-
-
-
-/*CONTATOS */
-
-.contact{
-    padding: 50px 0;
-}
-
-.contato{
-    width: 50%;
-    height: 56vh;
     
 }
 
-.contato h2,.send h2{
-    font-size: 35px;
-    text-shadow: 0px 0px 5px #000;
-
-}
-
-.contato p{
-    margin-top: 10px;
-    font-size: 20px;
-    letter-spacing: 2px;
-   
-}
-
-.contato p a i{
+.skills h1{
+    text-align: center;
     color: #000;
-    text-decoration: underline;
+}
+
+.skills .icon-item{
     
+    width: 33.3%;
+    padding: 20px 30px;
+    float: left;
+    margin: 10px auto;
 }
 
-.send{
-    width: 50%;
-}
-
-.send form{
-    width: 100%;
-    max-width: 450px;
-
-    margin-top: 10px;
-}
-
-.send form input{
-   width: 100%;
-    height: 40px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.send form .w50{
-    display: flex;
+.skills .icon-item i{
+    font-size: 50px;
 }
 
 
 
-
-
-
-.send form input[type=submit]{
-    width: 30%;
-    cursor: pointer;
-    background-color: #000;
-    color: #fff;
-    box-shadow: 0px 0px 5px #000;
-    transition: 0.3s;
-    border: none;
-}
-
-.send form input[type=submit]:hover{
-    background-color: #09aaa7;
-}
-
-.send form textarea{
-    width: 100%;
-   
-    border-radius: 10px;
-    height: 140px;
-    padding: 5px;
-    resize: none;
+.skills .icon-item P{
+    margin-top: 6px;
+    font-weight: bolder;
+    color: #000;
 }
 
 
 
 .rodape{
-    padding: 50px 0;
     background-color: #212121;
-    text-align: center;
 }
 
-.rodape i{
-    color: #06d8d5;
-    font-size: 40px;
-  
+.info-user{
+    width: 40%;
+    
+    padding: 5% 40px;
+   
+    
 }
 
+.info-user i{
+    margin: 0px 15px;
+    font-size: 30px;
+    color: #bdbdbd ;
+}
+
+.info-user p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #bdbdbd ;
+}
+
+.line{
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.links{
+    margin-top: 10px;
+}
+
+.links ul{
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+}
 
 @media screen and (max-width:510px){
 
 
-    .name{
-        padding-top: 35%;
-    }
-
-    .banner{
-        height: 400px;
+    .logo h1 span{
+        margin: 0 auto;
     }
 
     .menu-desktop{
         display: none;
     }
 
-    .menu-mobile{
-        
-        position: fixed;
-        display: block;
-    }
-
-    .hide{
-        width: 100%;
-       position: fixed;
-       left: -450px;
-       transition: 1s;
-    
-    }
-
-    .show{
-        width: 100%;
-        position: fixed;
-        left: 0;
-        transition: 1s;
-   
-    }
-
     .logo-menu{
-        display: block;
         color: #fff;
-        font-size: 25px;
+        font-size: 30px;
         cursor: pointer;
-    }
-
-    .menu-mobile ul{
-        text-align: center;
-        padding-top: 25%;
-        background-color: #212121;
-        list-style: none;
-        
-
-    }
-
-    .menu-mobile li{
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-    }
-
-    .menu-mobile li a{
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .sobre .flex{
         display: block;
-       
     }
 
-    .sobre .foto{
-        width: 100%;
-    }
-
-    .sobre .conteudo-sobre {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-    .curriculo{
-        position: static;
-    }
-
-    .work .lado{
-        width: 100%;
-        height: 100%;
-    }
-
-    .work .info{
-       
+    .name{
+        padding-top: 0;
         position: relative;
-        top: -90px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 
-    .work{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .preview{
-        text-align: center;
-    }
-
-    .preview img{
-        display: none;
-
-    }
-
-    .contact .flex{
-        display: block;
-       
-    }
-
-    .contato{
-        width: 100%;
-        text-align: center;
-        height: 100%;
-    }
-
-    .contato h2{
-        font-size: 20px;
-    }
-
-    .contato p{
-        font-size: 13px;
-        margin-top: 20px;
-
-    }
-
-    .send{
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .send h2{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .send form .w50{
-        display: block;
-    }
-
-    .send form .w50 input[type=email]{
-        margin-left: 0;
-    }
-
-    .icons{
+    .name h2{
         font-size: 35px;
     }
 
+    .name p span{
+        color: #fff;
+    }
+
+    .banner{
+        height: 500px;
+    }
+
+    .servicos {
+
+        padding: 30px 10px;
+    }
+
+    .servicos h1{
+        margin-bottom: 0;
+    }
+
+    .servicos .container > .flex{
+        
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicos .card{
+        
+        width: 100%;
+    }
+
+    .sobre{
+        padding: 40px 15px;
+    }
+
+    .skills .icon-item{
+        padding: 20px 10px;
+    }
+
+    .info-user {
+        width: 100%;
+    }
+
+   .rodape .info-user {
+       padding: 5% 0;
+   }
+
 }
+
+
+
+
+
+
 
 
 

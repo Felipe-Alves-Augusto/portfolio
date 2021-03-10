@@ -160,6 +160,8 @@ $(function(){
 });
 
 
-Tenho 19 anos,estou em busca de uma vaga na área de tecnologia para colocar em prática o meu aprendizado,busco vagas de estágio ou Junior.Estudo Análise e Desenvolvimento de Sistemas na uninove, atualmente estou no 2° semestre. Na faculdade atualmente estou estudando: PHP, DevOps, Análise e projeto orientados a objetos, C#,Desenvolvimento em Banco de dados com SQL.
-Faço um curso complementar de desenvolvedor Full Stack na Danki Code, no momento estou focando no Frond-End.
-Tenho Inglês Pré-Avançado, estudei três anos no Cna atualmente nao faço mais.
+
+Eu sou o Felipe
+
+Tenho 19 anos, atualmente curso o 3° Semestre de Análise e Desenvolvimento de Sistemas na Universidade Nove de Julho (UNINOVE). Além disso, faço um curso complementar de Desenvolvedor Full Stack na Danki Code.
+Tenho formação em Inglês Pré - Avançado, com duração de 3 anos (2017 - 2019). Estou à procura de uma vaga para a área de Tecnologia, para colocar em prática meu aprendizado. Busco vagas em Estágios e/ou Júnior. 

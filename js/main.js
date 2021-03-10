@@ -1,83 +1,21 @@
+window.onload = ()=>{
+
+    let sliderMobile = document.querySelector('.slider-mobile');
+    let sliderDesktop = document.querySelector('.projetos');
+
+    console.log(sliderMobile)
+
+        document.body.onresize = ()=>{
+
+            if(document.body.clientWidth < 510){
 
 
-window.onload = function(){
+                
 
-    let header = document.getElementById('topo');
-    let tamanhoScroll = document.body.scrollHeight;
-    let textWhite = document.querySelector('.white');
+            }
 
-    window.addEventListener('scroll',()=>{
-
-        let scrollAtual = document.body.scrollTop;
-
-        if(tamanhoScroll > scrollAtual){
-
-            header.classList.add('add-color');
-            textWhite.style.color = 'white';
-
-        } else{
-            header.style.backgroundColor = 'transparent';
         }
 
 
-    });
 
 }
-
-
- // SLIDER PROJETOS
-
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-let thumb = document.getElementsByClassName('thumb');
-let work = document.querySelector('.work');
-
-let backgroundImg = new Array(
-    "img/projeto02.png",
-    "img/projeto01.jpg",
-    "img/projeto3.png",
-    "img/projeto4.png",
-    "img/projeto5.jpg",
-    "img/projeto6.png"
-
-);
-
-let i = 0;
-
-next.onclick = ()=>{
-    if(i < 5){
-        work.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
-        
-        thumb[i+1].classList.add('active');
-        thumb[i].classList.remove('active');
-        i++;
-    }
-}
-
-prev.onclick = ()=>{
-    if(i > 0){
-        work.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
-        thumb[i-1].classList.add('active');
-        thumb[i].classList.remove('active');
-        i--;
-    }
-}
-
-
-let btn_logo = document.querySelector('.logo-menu');
-let menu = document.querySelector('.menu-mobile');
-
-
-btn_logo.addEventListener('click',()=>{
-
-    if(menu.classList.contains('hide')){
-
-        menu.classList.add('show')
-        menu.classList.remove('hide');
-
-    } else{
-        menu.classList.add('hide');
-        menu.classList.remove('show');
-    }
-
-})
