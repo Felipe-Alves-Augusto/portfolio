@@ -24,6 +24,7 @@
     <meta property="twitter:url" content="https://felipe-alves-augusto.github.io/portifolio/">
     <meta property="twitter:image" content="foto  o site">
     <title>Felipe Alves Augusto</title>
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
     <link rel="stylesheet" href="css/style.css">
@@ -32,41 +33,40 @@
 </head>
 <body>
     <div id="home" class="banner">
-    <header id="topo">
-        <div class="container flex">
-            <div class="logo">
-                <h1>Portfo<span class="white">lio.</span></h1>
-            </div><!--logo-->
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav><!--menu-desktop-->
-            <div class="logo-menu">
-                <i class="fas fa-bars"></i>
-            </div><!--logo-menu-->
-           
-        </div><!--container-->
-    </header>
-    <nav class="menu-mobile">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav><!--menu-mobile-->
-
-    <div class="container name">
-        <p>Olá, meu nome é</p>
-        <h2>Felipe Alves</h2>
-        <p>e eu sou <span>desenvolvedor Full-Stack</span></p>
-    </div><!--name-->
+        <header id="topo">
+            <div class="container flex">
+                <div class="logo">
+                    <h1>Portfo<span class="white">lio.</span></h1>
+                </div><!--logo-->
+                <nav id="desktop" class="menu-desktop">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav><!--menu-desktop-->
+                <div id="btnMenu" class="logo-menu">
+                    <i class="fas fa-bars"></i>
+                </div><!--logo-menu-->
+            
+            </div><!--container-->
+        </header>
+        <aside id="mobile" class="menu-mobile hide ">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </aside><!--menu-mobile-->
+        <div id="name" class="container name">
+            <p>Olá, meu nome é</p>
+            <h2>Felipe Alves</h2>
+            <p>e eu sou <span>desenvolvedor Full-Stack</span></p>
+        </div><!--name-->
     </div><!--banner-->
     <section class="servicos">
         <h1>Serviços</h1>
@@ -140,6 +140,11 @@
                         <h2>Site com Painel de Controle</h2>
                     </a><!--layer-->
                   </div><!--swiper-slide-->
+                  <div class="swiper-slide" style="background-image: url(img/projeto7.png);">
+                    <a href="https://github.com/Felipe-Alves-Augusto/Sistema-de-Upload" target="_blank" class="layer">
+                        <h2>Sistemas de Upload de Arquivos</h2>
+                    </a><!--layer-->
+                  </div><!--swiper-slide-->
                
                 </div><!--swiper-container-->
                 <!-- Add Pagination -->
@@ -148,7 +153,7 @@
         </div><!--container-->
     </section><!--projetos-->
 
-    <section class="skills">
+    <section id="skill" class="skills scrollpsy">
         <h1>Habilidadessds</h1>
         <div class="container">
             
@@ -205,12 +210,11 @@
            
             
     </footer><!--rodape-->
+<script src="js/controller/Site.js"></script>
+<script src="js/main.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="../package/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
-
-
 <script src="https://kit.fontawesome.com/8debdb91c9.js" crossorigin="anonymous"></script>
 </body>
 </html>
