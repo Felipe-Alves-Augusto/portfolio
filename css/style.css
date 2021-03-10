@@ -402,12 +402,13 @@ header{
         font-size: 30px;
         cursor: pointer;
         display: block;
+        padding: 0 2%;
     }
 
     .name{
         padding-top: 0;
         position: relative;
-        top: 10%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -427,7 +428,7 @@ header{
 
     .servicos {
 
-        padding: 30px 10px;
+        padding: 30px 3px;
     }
 
     .servicos h1{
@@ -452,11 +453,15 @@ header{
     }
 
     .sobre{
-        padding: 40px 15px;
+        padding: 40px 8px;
     }
 
     .skills .icon-item{
         padding: 20px 5px;
+    }
+
+    .skills .icon-item p{
+        font-size: 10px;
     }
 
     .info-user {
@@ -465,6 +470,10 @@ header{
 
    .rodape .info-user {
        padding: 5% 0;
+   }
+
+   .rodape .info-user .line p{
+       font-size: 14px;
    }
 
 }
@@ -483,7 +492,7 @@ header{
    }
 
    .servicos .card{
-       width: 80%;
+       width: 100%;
        margin: 20px 0;
    }
 

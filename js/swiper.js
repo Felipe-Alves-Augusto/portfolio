@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = ()=>{
 
 
     var swiper = new Swiper('.swiper-container', {
@@ -25,4 +25,5 @@ window.onload = function(){
           
         }
       });
+
 }
