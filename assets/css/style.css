@@ -471,6 +471,14 @@ html, body {
     font-weight: 700;
 }
 
+.modal-body ul, ol{
+    list-style-position: inside;
+}
+
+.modal-body ol li{
+    
+}
+
 .modal-footer {
     text-align: center;
 }
